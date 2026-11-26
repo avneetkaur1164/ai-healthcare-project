@@ -1,0 +1,419 @@
+/* =================================
+   AI HEALTHCARE PROJECT
+   MAIN WEBSITE DESIGN
+================================= */
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080f25;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background: #101b38;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #35c6f4;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #35c6f4;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 570px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #101b38, #172c5a, #30205c);
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    animation: slideIn 1s ease;
+}
+
+.welcome,
+.section-label {
+    color: #35c6f4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #35c6f4;
+}
+
+.hero h2 {
+    font-size: 21px;
+    color: #c4d5ff;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #d0d9ed;
+    max-width: 580px;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 470px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid #35c6f4;
+    box-shadow: 0 0 35px rgba(53, 198, 244, 0.25);
+    animation: float 4s ease-in-out infinite;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #27bce9;
+    color: #071329;
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 20px rgba(53, 198, 244, 0.4);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 2px solid #35c6f4;
+    color: #ffffff;
+}
+
+/* INTRODUCTION */
+
+.introduction {
+    text-align: center;
+    padding: 80px 12%;
+    background: #0d1730;
+}
+
+.introduction h2,
+.topics h2,
+.team h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.introduction p:not(.section-label) {
+    color: #c4cee3;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* TOPIC CARDS */
+
+.topics {
+    padding: 80px 8%;
+    text-align: center;
+    background: #080f25;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.topic-card {
+    background: #142343;
+    padding: 30px;
+    border: 1px solid #263d68;
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.4s;
+    text-align: left;
+}
+
+.topic-card:hover {
+    transform: translateY(-10px);
+    border-color: #35c6f4;
+    box-shadow: 0 10px 30px rgba(53, 198, 244, 0.15);
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.topic-card h3 {
+    color: #35c6f4;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.topic-card p {
+    color: #c4cee3;
+    margin-bottom: 18px;
+}
+
+.topic-card a {
+    color: #35c6f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topic-card a:hover {
+    color: #ffffff;
+}
+
+/* WHY AI SECTION */
+
+.why-ai {
+    padding: 80px 8%;
+    background: #111e3d;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.why-content {
+    flex: 1;
+}
+
+.why-content h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.why-content p {
+    color: #c4cee3;
+    margin-bottom: 15px;
+}
+
+.why-image {
+    flex: 1;
+}
+
+.why-image img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid #35c6f4;
+}
+
+/* TEAM SECTION */
+
+.team {
+    padding: 80px 8%;
+    text-align: center;
+    background: #080f25;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.team-card {
+    background: #142343;
+    border: 1px solid #263d68;
+    border-radius: 12px;
+    padding: 30px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    border-color: #35c6f4;
+    transform: translateY(-5px);
+}
+
+.team-card h3 {
+    color: #35c6f4;
+    margin-bottom: 12px;
+}
+
+.team-card p {
+    color: #c4cee3;
+}
+
+/* FOOTER */
+
+footer {
+    background: #050a19;
+    text-align: center;
+    padding: 35px 15px;
+    border-top: 1px solid #263d68;
+}
+
+footer h3 {
+    color: #35c6f4;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aebbd5;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.copyright {
+    margin-top: 20px !important;
+    color: #71809f;
+}
+
+/* ANIMATIONS */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 850px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .why-ai {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .introduction h2,
+    .topics h2,
+    .team h2,
+    .why-content h2 {
+        font-size: 27px;
+    }
+
+    .topic-card {
+        width: 100%;
+    }
+}

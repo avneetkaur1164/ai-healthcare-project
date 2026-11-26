@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive AI Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                AI <span>Healthcare</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Global Trends</a></li>
+                <li><a href="india.html">AI in India</a></li>
+                <li><a href="interactive.html">Interactive Lab</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="section-label">EXPLORE AND LEARN</p>
+
+            <h1>Interactive <span>AI Lab</span></h1>
+
+            <p>
+                Explore how artificial intelligence can support
+                drug discovery and personalized medicine.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="introduction">
+
+        <p class="section-label">LEARN ABOUT AI</p>
+
+        <h2>Welcome to the Interactive Lab</h2>
+
+        <p>
+            In this section, you will explore simple activities
+            that demonstrate how artificial intelligence can
+            support healthcare research and medical innovation.
+        </p>
+
+    </section>
+
+
+    <!-- DRUG DISCOVERY SIMULATOR -->
+
+    <section class="topics">
+
+        <p class="section-label">INTERACTIVE ACTIVITY</p>
+
+        <h2>Drug Discovery Simulator</h2>
+
+        <div class="topic-card">
+
+            <div class="card-icon">💊</div>
+
+            <h3>Choose a Research Compound</h3>
+
+            <p>
+                Select a sample compound to see an example
+                of how AI could help researchers examine
+                potential medicines.
+
+                This is an educational simulation,
+                not a real medical test.
+            </p>
+
+            <select id="compound">
+
+                <option value="">Select a compound</option>
+
+                <option value="A">Compound A</option>
+
+                <option value="B">Compound B</option>
+
+                <option value="C">Compound C</option>
+
+            </select>
+
+            <br><br>
+
+            <button onclick="analyzeCompound()">
+                Analyze Compound
+            </button>
+
+            <p id="result">
+                Your result will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONALIZED MEDICINE SIMULATOR -->
+
+    <section class="topics">
+
+        <p class="section-label">PERSONALIZED MEDICINE</p>
+
+        <h2>Patient Information Simulator</h2>
+
+        <div class="topic-card">
+
+            <div class="card-icon">🧬</div>
+
+            <h3>Explore a Sample Patient Profile</h3>
+
+            <p>
+                Enter an age and select a health condition
+                to explore a sample AI-generated research result.
+            </p>
+
+            <br>
+
+            <label for="patientAge">Patient Age:</label>
+
+            <input
+                type="number"
+                id="patientAge"
+                placeholder="Enter age"
+                min="1"
+                max="120">
+
+            <br><br>
+
+            <label for="condition">Select a Condition:</label>
+
+            <select id="condition">
+
+                <option value="">Choose a condition</option>
+
+                <option value="diabetes">Diabetes</option>
+
+                <option value="heart disease">Heart Disease</option>
+
+                <option value="cancer">Cancer</option>
+
+            </select>
+
+            <br><br>
+
+            <button onclick="analyzePatient()">
+                Analyze Patient
+            </button>
+
+            <p id="patientResult">
+                Your sample result will appear here.
+            </p>
+
+            <p>
+                Educational demonstration only.
+                This simulator does not provide medical advice
+                or diagnose diseases.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATIONAL VIDEO -->
+
+    <section class="introduction">
+
+        <p class="section-label">WATCH AND LEARN</p>
+
+        <h2>AI in Healthcare – Educational Video</h2>
+
+        <div class="topic-card">
+
+            <p>
+                Watch this educational video to learn more
+                about artificial intelligence in healthcare.
+            </p>
+
+            <iframe
+                width="100%"
+                height="350"
+                src="https://www.youtube.com/embed/ky0gP4_HWnA"
+                title="AI in Healthcare Educational Video"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                <a href="https://www.youtube.com/watch?v=ky0gP4_HWnA"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Watch directly on YouTube
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESEARCH TOPICS -->
+
+    <section class="topics">
+
+        <p class="section-label">EXPLORE AI</p>
+
+        <h2>AI Healthcare Research Topics</h2>
+
+        <div class="topic-card">
+
+            <ul id="researchTopics"></ul>
+
+            <button onclick="displayResearchTopics()">
+                Show Research Topics
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>AI in Healthcare</h3>
+
+        <p>
+            Exploring AI in Drug Discovery
+            and Personalized Medicine
+        </p>
+
+        <p>Computer Science 101 | Columbia College</p>
+
+        <p>Project by Avneet Kaur and Manveer Kaur</p>
+
+        <p class="copyright">
+            © 2026 AI Healthcare Project.
+            Educational purposes only.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
